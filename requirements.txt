@@ -1,0 +1,23 @@
+# Akuisisi data
+drms>=0.9              # klien JSOC (keyword + ekspor citra SHARP)
+sunpy>=6.0             # akses HEK untuk katalog flare GOES
+zeep>=4.2              # dependensi SOAP yang dipakai sunpy untuk HEK
+astropy>=6.0           # pembacaan FITS
+
+# Pengolahan
+numpy>=1.26
+pandas>=2.1
+pyarrow>=14.0          # cache parquet
+scipy>=1.11            # resize citra (tahap CNN)
+
+# Model & evaluasi
+scikit-learn>=1.4
+matplotlib>=3.8
+
+# Tingkat 4 (CNN) — OPSIONAL, sengaja tidak dipasang otomatis.
+# Ukurannya ~200 MB (CPU) sampai ~2,5 GB (CUDA), sementara tingkat 0-3 sama
+# sekali tidak membutuhkannya. Pasang hanya saat Anda siap naik ke CNN:
+#
+#     pip install torch --index-url https://download.pytorch.org/whl/cpu
+#
+# torch>=2.2

@@ -1,0 +1,5 @@
+setup,n_uji,positif,harp_uji,harp_berflare
+"2013-2014, split tunggal (Bagian 1-9)",4510,210,90,11
+"2010-2018, split tunggal (batas lama)",12145,201,82,3
+"2010-2025, split tunggal (batas baru)",180092,14364,980,251
+"2010-2025, walk-forward 4 jendela",179981,14349,997,253
